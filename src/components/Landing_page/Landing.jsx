@@ -38,7 +38,9 @@ export const Landing = () => {
                 <div></div>
               </div>
               <footer>
-                <Button style={{ borderRadius: '20px' }}>Create an Apple</Button>
+
+                <Button style={{ borderRadius: '20px' }}>Create an Account</Button>
+
                 {/* <Button variant="success">Primary</Button>{' '} */}
               </footer>
               {/* </div> */}
