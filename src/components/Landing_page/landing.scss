@@ -95,11 +95,14 @@ article.landing_page{
                     align-items: center;
                     div{
                         margin-right: 10px;
-                        border: 3px solid white;
+                        border: 2px solid white;
                         border-radius: 50%;
                         height: 9px;
                         width: 9px;
 
+                        &:first-child{
+                            background-color: white;
+                        }
                         &:last-child{
                             margin-right:0px;
                         }
