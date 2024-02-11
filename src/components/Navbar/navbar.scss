@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+$textInRow: left;
+
+nav {
+    text-align:$textInRow;
+}
+
+.website_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+ul{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid red;
+    li{
+        margin-right: 40px;
+        display: flex;
+        list-style: none;
+        cursor:pointer;
+    }
+}
