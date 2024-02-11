@@ -1,24 +1,25 @@
-import { useState } from 'react';
-import viteLogo from '/vite.svg';
-import codingLogo from '/coding.svg';
-import './App.css';
+import './App.scss';
+// Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Bootstrap Bundle JS
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import { Home, Navbar, Footer } from './components';
+import { Home, Footer, Landing } from './components';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="wholeApp">
-      <header>
-        <Navbar />
-      </header>
       <main>
-        <Home />
+        <Landing />
+        {/* <article className="second_article">
+          <header>2 ARTICLE</header>
+          <h2>Leroudfgjfdklgjfdl ldfk jgdf lkjgdflk jgdf </h2>
+        </article>
+        <Home /> */}
       </main>
-      <footer>
+      {/* <footer style={{ border: '1px solid yellow' }}>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }

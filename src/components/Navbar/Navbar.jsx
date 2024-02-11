@@ -1,8 +1,25 @@
 import React from 'react';
-import './navbar.css';
+import './navbar.scss';
+
+import { FaVolleyballBall } from 'react-icons/fa';
 
 export const Navbar = () => {
-  return <div className="navbar">Hello From Navbar</div>;
+  const navbarLinks = ['Home', 'Features', 'Pricing', 'Blog', 'Ball', 'Be'];
+  return (
+    <nav className="website_links">
+      <ul>
+        {navbarLinks.map((link, index) => {
+          return link === 'Ball' ? (
+            <li key={index + link}>
+              <FaVolleyballBall />
+            </li>
+          ) : (
+            <li key={index + link}>{link}</li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
 };
 
 // export default Navbar;
