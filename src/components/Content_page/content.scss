@@ -1,0 +1,57 @@
+@import '../../scss_fragments/reset';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+$text_font: 'DM Sans', sans-serif;
+
+.content_page{
+    background-image: url('../../assets/content.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F1893;
+    // border: 1px solid black;
+    font-family: $text_font;
+    color: white;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>article{
+        width: 815px;
+        height: 320px;
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        &>header{
+            flex-grow: 3;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        &>section{
+            
+            // height: 100%;
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            // align-items: stretch;
+            justify-content: space-between;
+            // border: 1px solid red;
+            &>header{
+                flex-grow: 0;
+                // border: 1px solid black;
+                font-weight: bold;
+                font-size: 58px;
+            }
+            &>p{
+                padding: 0;
+                margin: 0;
+                flex-grow: 0;
+                // border: 1px solid black;
+                font-size: 18px;
+                font-weight: 500;
+                align-self: flex-end;
+            }
+        }
+
+    }
+}
