@@ -14,12 +14,12 @@ export const Navbar = () => {
               <FaVolleyballBall />
             </li>
           ) : (
-            <li key={index + link}>{link}</li>
+            <li key={index + link}>
+              <a href="#features">{link}</a>
+            </li>
           );
         })}
       </ul>
     </nav>
   );
 };
-
-// export default Navbar;

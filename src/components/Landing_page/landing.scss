@@ -94,12 +94,13 @@ article.landing_page{
                     // border: 1px solid white;
                     align-items: center;
                     div{
-                        margin-right: 10px;
+                        margin-right: 20px;
                         border: 2px solid white;
                         border-radius: 50%;
                         height: 9px;
                         width: 9px;
-
+                        cursor: pointer;
+                        
                         &:first-child{
                             background-color: white;
                         }
