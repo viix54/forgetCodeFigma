@@ -3,7 +3,7 @@
 $text_font: 'DM Sans', sans-serif;
 
 .form_article{
-    font-style: $text_font;
+    font-family: $text_font;
     color: white;
     background-image: url('../../assets/form_backgr.png');
     background-repeat: no-repeat;
@@ -13,8 +13,15 @@ $text_font: 'DM Sans', sans-serif;
     // border: 1px solid white;
     &>article{
         display: flex;
-        
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
         .form_article_text_section{
+            // flex-grow: 1;
+            text-align: left;
+            // border: 3px solid red;
+            min-height: 320px;
+            max-width: 470px;
             &>header{
                 font-size: 42px;
                 font-weight: bold;
@@ -25,12 +32,100 @@ $text_font: 'DM Sans', sans-serif;
             }
         }
         .form_article_auth_section{
+            // border: 1px solid white;
+            // flex-grow: 1;
             &>div{
-                color:red;
+                color:black;
                 background-color: white;
-                border-radius: 15px;
+                border-radius: 20px;
                 height: 550px;
                 width: 470px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // border: 3px solid blue;
+                .auth_type{
+                    // border: 1px solid black;
+                    // margin: 10px 0px ;
+                    max-height: 70px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    // align-items: center;
+                    flex: 1;
+                    // border-bottom: 1px solid black;
+                    .auth_type_sign_up, .auth_type_login{
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: #1E0E62;
+                        flex: 1;
+                        width: 100%;
+                        border: none;
+                        background-color: white;
+                        border-bottom: 3px solid lightgray; // color for focus - #1E0E62
+                    }
+                    .auth_type_login{
+                        border-top-right-radius: 15px;
+                    }
+                    .auth_type_sign_up{
+                        border-bottom: 3px solid #1E0E62;
+                        border-top-left-radius: 15px;
+                    }
+                   
+                }
+                .auth_form{
+                    width: 100%;
+                    height: 100%;
+                    flex: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &>form{
+                        row-gap: 1px;
+                        min-width: 330px;
+                        // border: 1px solid black;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        min-height: 400px;
+                        .email_field, .password_field{
+                            // border: 1px solid grey
+                            border-radius: 100px;
+                            &::placeholder{
+                                opacity: 0.4;
+                            }
+                        }
+                        &>button{
+                            border:none;
+
+                        }
+                        .btn-login-twitter{
+                            border-radius: 100px;
+                            color: white;
+                            background-color: #1DA1F2;
+                            height: 50px ;
+                        }
+                        .btn-create-account{
+                            background-color: #25DAC5;
+                            height: 50px;
+                        }
+                        .or_lines{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &>div{
+                                flex:2;
+                                border: 1px solid lightgray;
+                            }
+                            &>p{
+                                margin: 0px 10px;
+                          
+                            }
+                        }
+                    }
+
+                }
             }
         }
 
