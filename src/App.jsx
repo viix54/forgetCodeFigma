@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Bootstrap Bundle JS
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-import { Home, Footer, Landing, Content, Features, FormComp } from './components';
+import { Footer, Landing, Content, Features, FormComp, Testimonial } from './components';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Content />
         <Features />
         <FormComp />
+        <Testimonial />
         {/* <article className="second_article">
           <header>2 ARTICLE</header>
           <h2>Leroudfgjfdklgjfdl ldfk jgdf lkjgdflk jgdf </h2>
