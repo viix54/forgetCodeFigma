@@ -25,16 +25,6 @@ export const Testimonial = () => {
         <header>Our Happy Clients</header>
         <div className="happy_clients_sections">
           {clients.map((client, index) => newClientOpinion(client, index))}
-          {/* <div className="person">
-              <div className="picture"></div>
-              <div className="section_text">
-                <p>
-                  Get a fully retina ready site when you build with Startup Framework. Websites look
-                  sharper and more gorgeous on devices with retina display support
-                </p>
-                <span>Rayhan Curran</span>
-              </div>
-            </div> */}
         </div>
       </article>
     </div>
