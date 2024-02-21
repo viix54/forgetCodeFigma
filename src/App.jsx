@@ -12,6 +12,7 @@ import {
   FormComp,
   Testimonial,
   CallToAction,
+  Showcase,
 } from './components';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <FormComp />
         <Testimonial />
         <CallToAction />
+        <Showcase />
         {/* <article className="second_article">
           <header>2 ARTICLE</header>
           <h2>Leroudfgjfdklgjfdl ldfk jgdf lkjgdflk jgdf </h2>
