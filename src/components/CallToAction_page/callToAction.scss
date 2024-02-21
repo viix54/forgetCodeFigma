@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+$text_font: 'DM Sans', sans-serif;
+
+.callToAction_container{
+    font-family: $text_font;
+    height: 770px;
+    background-image: url('../../assets/callToAction_backgr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F1893;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    &>article{
+        width: 770px;
+        height: 450px;
+        // border: 1px solid white;
+        &>section{
+            display: flex;
+            flex-direction: column;
+            justify-content:left;
+            height: 100%;
+            justify-content: space-evenly;
+            &>header{
+                font-size: 58px;
+                font-weight: bold;
+            }
+            &>p{
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .button_container{
+                display: flex;
+                justify-content: center;
+                column-gap: 30px;
+                .btn_play{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 40px;
+                    background-color: red;
+                }
+                .btn_getStarted{
+                    background-color: #25DAC5;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border-radius: 40px;
+                    width: 200px;
+                    height: 70px;
+                }
+
+            }
+        }
+    }
+}
