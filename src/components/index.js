@@ -6,4 +6,5 @@ export {Content} from './Content_page/Content.jsx';
 export {Features} from './Features_page/Features.jsx';
 export {FormComp} from './Form_page/FormComp.jsx';
 export {Testimonial} from './Testimonial_page/Testimonial.jsx';
-export {CallToAction} from './CallToAction_page/CallToAction.jsx'
+export {CallToAction} from './CallToAction_page/CallToAction.jsx';
+export {Showcase} from './ShowCase_page/Showcase.jsx';
