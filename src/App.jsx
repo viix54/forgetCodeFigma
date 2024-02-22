@@ -13,6 +13,7 @@ import {
   Testimonial,
   CallToAction,
   Showcase,
+  Team,
 } from './components';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Testimonial />
         <CallToAction />
         <Showcase />
+        <Team />
         {/* <article className="second_article">
           <header>2 ARTICLE</header>
           <h2>Leroudfgjfdklgjfdl ldfk jgdf lkjgdflk jgdf </h2>

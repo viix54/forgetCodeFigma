@@ -8,3 +8,4 @@ export {FormComp} from './Form_page/FormComp.jsx';
 export {Testimonial} from './Testimonial_page/Testimonial.jsx';
 export {CallToAction} from './CallToAction_page/CallToAction.jsx';
 export {Showcase} from './ShowCase_page/Showcase.jsx';
+export {Team} from './Team_page/Team.jsx';
