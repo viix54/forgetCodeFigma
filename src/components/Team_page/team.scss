@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+$text_font: 'DM Sans', sans-serif;
+
+.team_container{
+    font-family: $text_font;
+    background-color: hsl(251, 72%, 34%);
+    height: 990px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>article{
+        width: 760px;
+        height: 790px;
+        border: 1px solid white;
+        .crew_member_container{
+            display: flex;
+            flex-wrap: wrap;
+            &>section{
+                height: 100%;
+                text-align: left;
+                &>img{
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
