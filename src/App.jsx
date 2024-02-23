@@ -14,6 +14,7 @@ import {
   CallToAction,
   Showcase,
   Team,
+  Contact,
 } from './components';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <CallToAction />
         <Showcase />
         <Team />
+        <Contact />
         {/* <article className="second_article">
           <header>2 ARTICLE</header>
           <h2>Leroudfgjfdklgjfdl ldfk jgdf lkjgdflk jgdf </h2>
