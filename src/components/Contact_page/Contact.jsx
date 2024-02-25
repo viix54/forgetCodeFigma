@@ -30,10 +30,47 @@ export const Contact = () => {
         </section>
         <section className="contact_form">
           <form>
-            <input type="text" name="" id="" />
-            <input type="text" name="" id="" />
-            <input type="text" name="" id="" />
-            <input type="text" name="" id="" />
+            <div className="nameAndBudget">
+              <label htmlFor="firstNameInput">Your name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="First name"
+                id="firstNameInput"
+              />
+              <label htmlFor="budget">Budget</label>
+              <select className="form-select" id="budget">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <label htmlFor="mail">Input field</label>
+            <input type="text" className="form-control" placeholder="name@mail.com" id="mail" />
+            <label htmlFor="message">Your message</label>
+            <textarea
+              className="form-control"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Message"></textarea>
+            <footer>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label className="form-check-label footer_checkbox" htmlFor="flexCheckDefault">
+                  Default checkbox
+                </label>
+              </div>
+              <button type="submit" className="btn btn-success">
+                Send
+              </button>
+            </footer>
           </form>
         </section>
       </article>
