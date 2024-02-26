@@ -31,40 +31,51 @@ export const Contact = () => {
         <section className="contact_form">
           <form>
             <div className="nameAndBudget">
-              <label htmlFor="firstNameInput">Your name</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="First name"
-                id="firstNameInput"
-              />
-              <label htmlFor="budget">Budget</label>
-              <select className="form-select" id="budget">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+              <label htmlFor="firstNameInput" className="name_container">
+                Your name
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="First name"
+                  id="firstNameInput"
+                />
+              </label>
+              <label htmlFor="budget" className="budget_container">
+                Budget
+                <select className="form-select" id="budget">
+                  <option selected value="500">
+                    500 $
+                  </option>
+                  <option value="600">600 $</option>
+                  <option value="700">700 $</option>
+                  <option value="800">800 $</option>
+                </select>
+              </label>
             </div>
-            <label htmlFor="mail">Input field</label>
-            <input type="text" className="form-control" placeholder="name@mail.com" id="mail" />
-            <label htmlFor="message">Your message</label>
-            <textarea
-              className="form-control"
-              id="message"
-              cols="30"
-              rows="5"
-              placeholder="Message"></textarea>
+            <label htmlFor="mail">
+              Input field
+              <input type="text" className="form-control" placeholder="name@mail.com" id="mail" />
+            </label>
+            <label htmlFor="message">
+              Your message
+              <textarea
+                className="form-control"
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="Message"></textarea>
+            </label>
             <footer>
               <div className="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label className="form-check-label footer_checkbox" htmlFor="flexCheckDefault">
-                  Default checkbox
+                <label className="form-check-label footer_checkbox" htmlFor="flexCheckChecked">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  Send me a copy
                 </label>
               </div>
               <button type="submit" className="btn btn-success">

@@ -2,6 +2,10 @@
 
 $text_font: 'DM Sans', sans-serif;
 
+// input,textarea::placeholder{
+//                                 opacity: 0.4;
+//                             }
+
 .contact_container{
     font-family: $text_font;
     height: 870px;
@@ -65,19 +69,51 @@ $text_font: 'DM Sans', sans-serif;
             &>form{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 width: 80%;
                 height: 80%;
-                border: 1px solid red;
+                // border: 1px solid red;
                 color: #1E0E62;
                 text-align: left;
                 text-transform: uppercase;
                 font-size: 14px;
                 font-weight: bold;
-                .nameAndBudget{
-                    &>select, input{
-                        border-radius: 15px;
+                input,textarea{
+                    color:#1E0E62;
+                    &::placeholder{
+                        opacity: 0.8;
                     }
+                   
+                }
+                select, option{
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #1E0E62;
+                }
+                .nameAndBudget{
+                    display: flex;
+                    justify-content: space-between;
+                    column-gap: 30px;
+                    &>label{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        &>select,input{
+                            border-radius: 15px;
+                        }
+                    }
+                    .name_container{
+                        flex: 2;
+                    }
+                    .budget_container{
+                        flex: 1;
+                    }
+                    
+                }
+                &>label{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
                 }
                 &>footer{
                     display: flex;
@@ -89,15 +125,22 @@ $text_font: 'DM Sans', sans-serif;
                         border-radius: 15px;
                     }
                     &>div{
-                        &>input{
-                            border-radius: 5px;
-                            background-color: #25DAC5;
-                            color: black;
-                        }
                         .footer_checkbox{
                             color: rgba($color: #151439, $alpha: 0.4);
                         }
+                        &>label{
+                            text-transform:none;
+                            &>input{
+                                border-radius: 5px;
+                                background-color: #25DAC5;
+                                &:checked{
+                                    color: black;
+                                }
+                                
+                            }
+                        }
                     }
+                    
                 }
             }
         }
