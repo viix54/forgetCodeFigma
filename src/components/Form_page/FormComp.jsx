@@ -1,4 +1,3 @@
-import React from 'react';
 import './form_comp.scss';
 
 import { useForm } from 'react-hook-form';

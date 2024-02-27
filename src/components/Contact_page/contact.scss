@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+$text_font: 'DM Sans', sans-serif;
+
+// input,textarea::placeholder{
+//                                 opacity: 0.4;
+//                             }
+
+.contact_container{
+    font-family: $text_font;
+    height: 870px;
+    background-image: url('../../assets/contact_backgr.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-color: #2F1893;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid white;
+    &>article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 970px;
+        height: 570px;
+        .contact_text{
+            height: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            row-gap: 40px;
+            justify-content: center;
+            // border: 1px solid white;
+            text-align: left;
+            &>header{
+                letter-spacing: 3px;
+                font-weight: bold;
+                font-size: 42px;
+            }
+            &>p{
+                font-weight: 500;
+                font-size: 22px;
+            }
+            &>span{
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+                font-size: 16px;
+                width: 280px;
+            }
+            &>:last-child{
+                align-items: flex-start;
+                &>:first-child{
+                    height: auto;
+                }
+            }
+        }
+        .contact_form{
+            flex:1;
+            height: 100%;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &>form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 80%;
+                height: 80%;
+                // border: 1px solid red;
+                color: #1E0E62;
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                input,textarea{
+                    color:#1E0E62;
+                    &::placeholder{
+                        opacity: 0.8;
+                    }
+                   
+                }
+                select, option{
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #1E0E62;
+                }
+                .nameAndBudget{
+                    display: flex;
+                    justify-content: space-between;
+                    column-gap: 30px;
+                    &>label{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        &>select,input{
+                            border-radius: 15px;
+                        }
+                    }
+                    .name_container{
+                        flex: 2;
+                    }
+                    .budget_container{
+                        flex: 1;
+                    }
+                    
+                }
+                &>label{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                }
+                &>footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &>button{
+                        background-color: #25DAC5;
+                        border: none;
+                        border-radius: 15px;
+                    }
+                    &>div{
+                        .footer_checkbox{
+                            color: rgba($color: #151439, $alpha: 0.4);
+                        }
+                        &>label{
+                            text-transform:none;
+                            &>input{
+                                border-radius: 5px;
+                                background-color: #25DAC5;
+                                &:checked{
+                                    color: black;
+                                }
+                                
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
