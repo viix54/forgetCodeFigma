@@ -1,11 +1,38 @@
-import React from 'react';
-
 import './contact.scss';
 import { FaPhone } from 'react-icons/fa6';
 import { IoMail } from 'react-icons/io5';
 import { MdApartment } from 'react-icons/md';
 
+import { useForm } from 'react-hook-form';
+
+// import { z } from 'zod';
+// import { zodResolver } from '@hookform/resolvers/zod';
+
+// const schema = z.object({
+//   email: z.string().email(),
+//   budget: z.string().required,
+// });
+
 export const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm();
+
+  const onSubmit = async (data) => {
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      console.log(data);
+      throw new Error();
+    } catch (error) {
+      setError('root', {
+        message: 'This user already exists !',
+      });
+    }
+  };
+
   return (
     <div className="contact_container">
       <article>
@@ -29,20 +56,28 @@ export const Contact = () => {
           </span>
         </section>
         <section className="contact_form">
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="nameAndBudget">
               <label htmlFor="firstNameInput" className="name_container">
                 Your name
                 <input
+                  {...register('firstname', {
+                    required: 'This field has to be filled up',
+                  })}
                   type="text"
                   className="form-control"
                   placeholder="First name"
                   id="firstNameInput"
                 />
+                {errors.firstname ? (
+                  <div style={{ color: 'red', textTransform: 'none' }}>
+                    {errors.firstname.message}
+                  </div>
+                ) : null}
               </label>
               <label htmlFor="budget" className="budget_container">
                 Budget
-                <select className="form-select" id="budget">
+                <select {...register('budget')} className="form-select" id="budget">
                   <option selected value="500">
                     500 $
                   </option>
@@ -54,7 +89,18 @@ export const Contact = () => {
             </div>
             <label htmlFor="mail">
               Input field
-              <input type="text" className="form-control" placeholder="name@mail.com" id="mail" />
+              <input
+                type="text"
+                {...register('email', {
+                  required: 'This field has to be filled up',
+                })}
+                className="form-control"
+                placeholder="name@mail.com"
+                id="mail"
+              />
+              {errors.email ? (
+                <div style={{ color: 'red', textTransform: 'none' }}>{errors.email.message}</div>
+              ) : null}
             </label>
             <label htmlFor="message">
               Your message
@@ -63,25 +109,29 @@ export const Contact = () => {
                 id="message"
                 cols="30"
                 rows="5"
-                placeholder="Message"></textarea>
+                placeholder="Message"
+                {...register('message')}></textarea>
             </label>
             <footer>
               <div className="form-check">
                 <label className="form-check-label footer_checkbox" htmlFor="flexCheckChecked">
                   <input
+                    {...register('sendCopyCheckBox')}
                     className="form-check-input"
                     type="checkbox"
                     value=""
                     id="flexCheckChecked"
-                    checked
                   />
                   Send me a copy
                 </label>
               </div>
               <button type="submit" className="btn btn-success">
-                Send
+                {!isSubmitting ? 'Send' : 'Sumbitting ...'}
               </button>
             </footer>
+            {errors.root ? (
+              <div style={{ color: 'red', textTransform: 'none' }}>{errors.root.message}</div>
+            ) : null}
           </form>
         </section>
       </article>
