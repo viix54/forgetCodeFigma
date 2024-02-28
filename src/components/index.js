@@ -10,3 +10,4 @@ export {CallToAction} from './CallToAction_page/CallToAction.jsx';
 export {Showcase} from './ShowCase_page/Showcase.jsx';
 export {Team} from './Team_page/Team.jsx';
 export {Contact} from './Contact_page/Contact.jsx';
+export {PriceTable} from './PriceTable_page/PriceTable.jsx';

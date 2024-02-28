@@ -5,6 +5,8 @@ import { MdApartment } from 'react-icons/md';
 
 import { useForm } from 'react-hook-form';
 
+import { useEffect } from 'react';
+
 // import { z } from 'zod';
 // import { zodResolver } from '@hookform/resolvers/zod';
 
@@ -14,6 +16,10 @@ import { useForm } from 'react-hook-form';
 // });
 
 export const Contact = () => {
+  useEffect(() => {
+    document.getElementById('flexCheckChecked').checked = true;
+  }, []);
+
   const {
     register,
     handleSubmit,

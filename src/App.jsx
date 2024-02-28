@@ -15,6 +15,7 @@ import {
   Showcase,
   Team,
   Contact,
+  PriceTable,
 } from './components';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Showcase />
         <Team />
         <Contact />
+        <PriceTable />
         {/* <article className="second_article">
           <header>2 ARTICLE</header>
           <h2>Leroudfgjfdklgjfdl ldfk jgdf lkjgdflk jgdf </h2>
