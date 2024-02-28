@@ -11,6 +11,20 @@ export const prices = [
         all_day_support:false,
         adming_tools:false,
         user_managment:false,
+
+        [Symbol.iterator]() {
+            const priceData = Object.entries(this);
+            let index = 1;
+            return {
+                next(){
+                    index++;
+                    return {
+                        value:priceData[index],
+                        done: index >= priceData.length
+                    }
+                }
+            }
+        }
     },
     {
         type:'professional',
@@ -24,6 +38,20 @@ export const prices = [
         all_day_support:false,
         adming_tools:false,
         user_managment:false,
+
+        [Symbol.iterator]() {
+            const priceData = Object.entries(this);
+            let index = 1;
+            return {
+                next(){
+                    index++;
+                    return {
+                        value:priceData[index],
+                        done: index >= priceData.length
+                    }
+                }
+            }
+        }
     },
     {
         type:'team',
@@ -37,5 +65,19 @@ export const prices = [
         all_day_support:true,
         adming_tools:true,
         user_managment:true,
+
+        [Symbol.iterator]() {
+            const priceData = Object.entries(this);
+            let index = 1;
+            return {
+                next(){
+                    index++;
+                    return {
+                        value:priceData[index],
+                        done: index >= priceData.length
+                    }
+                }
+            }
+        }
     },
 ]

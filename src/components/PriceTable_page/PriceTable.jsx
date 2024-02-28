@@ -2,19 +2,6 @@ import './priceTable.scss';
 import { prices } from './prices';
 import { GiCheckMark } from 'react-icons/gi';
 
-const checkPriceFields = (price_data) => {
-  let priceList = document.createElement('ul');
-  for (let field in price_data) {
-    if (field !== 'type' && field !== 'price' && price_data[field]) {
-      let elContent = document.createTextNode(field);
-      let newListEl = document.createElement('li');
-      newListEl.appendChild(elContent);
-      priceList.appendChild(newListEl);
-    }
-  }
-  return priceList;
-};
-
 const prices_container = (price_data, index) => {
   return (
     <div className="price_block" key={index + price_data.type}>
@@ -23,7 +10,26 @@ const prices_container = (price_data, index) => {
           <h1>{price_data.type}</h1>
           <h2>{price_data.price} $</h2>
         </header>
-        {checkPriceFields(price_data)}
+        <ul>
+          {Array.from(price_data).map(([key, value]) => {
+            if (value == true) {
+              return (
+                <li key={key + value + key}>
+                  <GiCheckMark style={{ color: 'green' }} />
+                  {key}
+                </li>
+              );
+            } else {
+              return (
+                <li style={{ opacity: 0.4 }} key={key + value + key}>
+                  <div style={{ width: '16px', height: '16px' }} />
+                  {key}
+                </li>
+              );
+            }
+          })}
+        </ul>
+        <button className="btn btn-success price_block_btn">Get Started</button>
       </section>
     </div>
   );
