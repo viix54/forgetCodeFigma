@@ -1,15 +1,16 @@
 export const prices = [
     {
-        type:'starter',
+        type:'Starter',
         price:'9.99',
         memory_size:true,
         backups_days:true,
-        social_integr:true,
+        social_integrations:true,
         client_billing:true,
         remote_access:false,
         custom_domain:false,
         all_day_support:false,
-        adming_tools:false,
+        admin_tools:false,
+        collaboration_tools: false,
         user_managment:false,
 
         [Symbol.iterator]() {
@@ -27,16 +28,17 @@ export const prices = [
         }
     },
     {
-        type:'professional',
+        type:'Professional',
         price:'19.99',
         memory_size:true,
         backups_days:true,
-        social_integr:true,
+        social_integrations:true,
         client_billing:true,
         remote_access:true,
         custom_domain:true,
         all_day_support:false,
-        adming_tools:false,
+        admin_tools:false,
+        collaboration_tools: false,
         user_managment:false,
 
         [Symbol.iterator]() {
@@ -54,16 +56,17 @@ export const prices = [
         }
     },
     {
-        type:'team',
+        type:'Team',
         price:'49.99',
         memory_size:true,
         backups_days:true,
-        social_integr:true,
+        social_integrations:true,
         client_billing:true,
         remote_access:true,
         custom_domain:true,
         all_day_support:true,
-        adming_tools:true,
+        admin_tools:true,
+        collaboration_tools: true,
         user_managment:true,
 
         [Symbol.iterator]() {
