@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+$text_font: 'DM Sans', sans-serif;
+
+.priceTable_container{
+    background-image: url('../../assets/priceTable_backgr.png');
+    font-family: $text_font;
+    background-color: #2F1893;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    &>article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1170px;
+        height: 930px;
+        // border: 1px solid white;
+        justify-content: space-between;
+        &>header{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            &>h1{
+                font-size: 42px;
+                font-weight: bold;
+            }
+            &>p{
+                font-size: 22px;
+                font-weight: 500;
+                width: 580px;
+            }
+        }
+        .price_blocks_container{
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            // border: 1px solid white;
+            .price_block{
+                border: 1px solid gray;
+                border-radius: 15px;
+                display: flex;
+                width: 370px;
+                height: 730px;
+                align-items: center;
+                justify-content: center;
+                &>section{
+                    // border: 1px solid white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    row-gap: 30px;
+                    width: 75%;
+                    height: 85%;
+                    &>header{
+                        // border: 1px solid white;
+                        margin-left: 16px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        flex: 1;
+                        &>h1{
+                            width: fit-content;
+                            // border: 1px solid white;
+                            font-size: 22px;
+                            font-weight: 500;
+                            margin: 0px;
+                            padding: 0px;
+                        }
+                        &>h2{
+                            width: fit-content;
+                            // border: 1px solid white;
+                            font-size: 58px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            margin: 0px;
+                            padding: 0px;
+                            .dollar_sign{
+                                width: 15px;
+                                height: 30px;
+                                // border:1px solid white;
+                                align-self: flex-start;
+                            }
+                        }
+                    }
+                    .price_block_btn{
+                        // flex: 1;
+                        border-radius: 30px;
+                        width: 80%;
+                        height: 60px;
+                        background: none;
+                        border:1px solid gray;
+                        font-size: 18px;
+                        font-weight: 500;
+                        align-self: center;
+                        &:hover{
+                            background-color: #E93A7D   ;
+                        }
+                    }
+                    &>ul{
+                        flex: 3;
+                        // border: 1px solid white;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0px;
+                        row-gap: 10px;
+                        &>li{
+
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
