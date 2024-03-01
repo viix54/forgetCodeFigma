@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+$text_font: 'DM Sans', sans-serif;
+
+.footer{
+    margin: 0px;
+    padding: 0px;
+    font-family: $text_font;
+    height:240px ;
+    background-color: #2F1893;
+    // border: 3px solid black;
+}

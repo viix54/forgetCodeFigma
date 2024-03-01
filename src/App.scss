@@ -4,18 +4,23 @@
 $text_font: 'DM Sans', sans-serif;
 
 .wholeApp{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    // display: grid;
+    // grid-template-columns: 100%;
+    // grid-template-rows: 100%;
     text-align: center;
     // overflow: hidden;
     // height: 2000px;
     // width: 100vw;
+    // height: fit-content;
 }
   
 main{
     display: flex;
     flex-direction: column;
+    // border: 5px solid black;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: fit-content;
 }
 
   
