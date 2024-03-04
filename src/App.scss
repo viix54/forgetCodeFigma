@@ -4,9 +4,9 @@
 $text_font: 'DM Sans', sans-serif;
 
 .wholeApp{
-    // display: grid;
-    // grid-template-columns: 100%;
-    // grid-template-rows: 100%;
+    display: grid;
+    grid-template-columns: fit-content;
+    grid-template-rows: fit-content;
     text-align: center;
     // overflow: hidden;
     // height: 2000px;
