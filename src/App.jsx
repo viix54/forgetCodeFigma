@@ -32,15 +32,8 @@ function App() {
         <Team />
         <Contact />
         <PriceTable />
-        {/* <article className="second_article">
-          <header>2 ARTICLE</header>
-          <h2>Leroudfgjfdklgjfdl ldfk jgdf lkjgdflk jgdf </h2>
-        </article>
-        <Home /> */}
       </main>
-      {/* <footer style={{ border: '1px solid yellow' }}>
-        <Footer />
-      </footer> */}
+      <Footer />
     </div>
   );
 }

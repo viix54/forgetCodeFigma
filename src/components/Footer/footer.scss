@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+$text_font: 'DM Sans', sans-serif;
+
+.footer{
+    margin: 0px;
+    padding: 0px;
+    font-family: $text_font;
+    height:240px ;
+    background-color: #2F1893;
+    color: white;
+    // border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer_container{
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // border: 1px solid white;
+        &>header{
+            display: flex;
+            justify-content: space-between;
+            &>h1{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            &>ul{
+                // border: 1px solid white;
+                display: flex;
+                // width: fit-content;
+                justify-content: space-between;
+                padding: 0px;
+                &>li{
+                // border: 1px solid white;
+                margin-right: 0px;
+                }
+                // &:last-child{
+                //     margin-right: 0px;
+                // }
+            }
+        }
+        &>hr{
+            border: 2px solid white;
+        }
+        .links{
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+            // border: 1px solid white;
+            &>ul{
+                // border: 1px solid white;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px;
+                &>li{
+                    margin-right: 0px;
+                    // border: 1px solid white;
+                    font-size: 16px;
+                }
+                
+            }
+            &>span{
+                font-size: 16px;
+            }
+        }
+    }
+}
