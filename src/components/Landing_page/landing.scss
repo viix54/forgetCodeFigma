@@ -66,6 +66,9 @@ article.landing_page{
                     flex-direction: column;
                     justify-content: space-between;
                     h3{
+                        @media screen and (min-width:360px) {
+                            font-size: 15vw;
+                        }
                         // border: 1px solid black;
                     }
                     div.changing_main_text{
@@ -121,6 +124,8 @@ article.landing_page{
     }
    
 }
+
+
   
     
   
