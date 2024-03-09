@@ -17,12 +17,18 @@ export const Landing = () => {
           <section>
             <div className="landing_paragraph">
               {/* <div className="landing_text"> */}
-              <header>
-                <h3>Startup 3</h3>
+              <header className="landing_paragraph_header">
+                <h3 className="landing_paragraph_header_startup">Startup 3</h3>
                 <div className="changing_main_text">
-                  <FaRegArrowAltCircleLeft size={30} className="left_arrow" />
-                  <h1>Forget About Code</h1>
+                  {/* <FaRegArrowAltCircleLeft size={30} className="left_arrow" /> */}
+                  <div className="left_arrow_block">
+                    <FaRegArrowAltCircleLeft size={30} className="left_arrow" />
+                  </div>
+                  <h1 className="landing_paragraph_header_forget">Forget About Code</h1>
+                  <div className="right_arrow_block">
                   <FaRegArrowAltCircleRight size={30} className="right_arrow" />
+                  </div>
+                  
                 </div>
               </header>
               <p>

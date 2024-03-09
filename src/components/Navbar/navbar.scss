@@ -19,6 +19,7 @@ ul{
     align-items: center;
     // border: 1px solid red;
     // border: 1px solid white;
+    padding-bottom: 3em;
     li{
         margin-right: 40px;
         display: flex;
@@ -28,8 +29,16 @@ ul{
             text-decoration: none;
             color: white;
         }
-        @media screen and (min-width:320px){
-            font-size: 10vw;
-        }
+        
+        
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .website_links{
+        padding: 0px;
+    }
+    .website_links_list_link{
+        font-size: 2.25em;
     }
 }
