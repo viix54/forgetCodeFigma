@@ -171,7 +171,7 @@ article.landing_page{
     to{left:1em;}
 }
 
-@media screen and (min-width:320px) and (max-width:767px){
+@media screen and (min-width:320px){
     article.landing_page{
         // height: 100vh;
         div.landing_component{
@@ -314,8 +314,78 @@ article.landing_page{
     }
 }
 
-@media screen and (min-width:768px){
-   
+@media screen and (min-width:768px) and (max-width: 1023px){
+   .landing_page{
+    .landing_component{
+        .close_button{
+            top: 0px;
+            right: 0px;
+        }
+        .mini_menu{
+            // display: none;
+            // display: block;
+            font-size: 3em !important;
+            width: 75vw;
+            height: fit-content;
+        }
+        &>section{
+            .landing_paragraph{
+                .landing_paragraph_header{
+                    .landing_paragraph_header_burger_startup{
+                        .landing_paragraph_burger_header{
+                            font-size: 4em !important;
+                            margin: 0px;
+                            justify-self: center;
+                        }
+                        .burger_menu{
+                            height: 2.75em !important;
+                            width: 2.75em !important;
+                            justify-self: flex-end;
+                        }
+                    }
+                    .changing_main_text{
+                        .landing_paragraph_header_forget{
+                            // border: 1px solid white;
+                            font-size: 5.5em;
+                        }
+                        .left_arrow_block{
+                            .left_arrow{
+                                
+                            }
+                        }
+                        .right_arrow_block{
+                            .right_arrow{
+    
+                            }
+                        }
+                        .left_arrow_block .left_arrow, .right_arrow_block .right_arrow{
+                            height: 4rem !important;
+                            width: 4rem !important;
+                        }
+                    }
+                }
+                &>p{
+                    // color: red;
+                    font-size: 2.15em !important;
+                }
+                .landing_pages_bar{
+                    .landing_pages_bar_circle{
+                        // background-color: red;
+                        height: 1.3em !important;
+                        width: 1.3em !important;
+                    }
+                }
+                &>footer{
+                    &>button{
+                        font-size: 2.5em !important;
+                        height: 4rem !important;
+                        // width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+   }
 }
 
 

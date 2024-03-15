@@ -70,11 +70,11 @@ export const Landing = () => {
                 coding.{' '}
               </p>
               <div className="landing_pages_bar">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className="landing_pages_bar_circle"></div>
+                <div className="landing_pages_bar_circle"></div>
+                <div className="landing_pages_bar_circle"></div>
+                <div className="landing_pages_bar_circle"></div>
+                <div className="landing_pages_bar_circle"></div>
               </div>
               <footer>
                 <Button style={{ borderRadius: '20px' }} className="account_btn">
