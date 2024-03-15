@@ -2,6 +2,7 @@ import React from 'react';
 import './navbar.scss';
 
 import { FaVolleyballBall } from 'react-icons/fa';
+import { IoMdCloseCircle } from 'react-icons/io';
 
 export const Navbar = () => {
   const navbarLinks = ['Home', 'Features', 'Pricing', 'Blog', 'Ball', 'Be'];
