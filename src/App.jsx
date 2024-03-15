@@ -23,17 +23,17 @@ function App() {
     <div className="wholeApp">
       <main>
         <Landing />
-        <Content />
-        <Features />
-        <FormComp />
-        <Testimonial />
-        <CallToAction />
-        <Showcase />
-        <Team />
-        <Contact />
-        <PriceTable />
+        {/* <Content /> */}
+        {/* <Features /> */}
+        {/* <FormComp /> */}
+        {/* <Testimonial /> */}
+        {/* <CallToAction /> */}
+        {/* <Showcase /> */}
+        {/* <Team /> */}
+        {/* <Contact /> */}
+        {/* <PriceTable /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

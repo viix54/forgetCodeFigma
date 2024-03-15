@@ -83,10 +83,12 @@ export const Contact = () => {
               </label>
               <label htmlFor="budget" className="budget_container">
                 Budget
-                <select {...register('budget')} className="form-select" id="budget">
-                  <option selected value="500">
-                    500 $
-                  </option>
+                <select
+                  {...register('budget')}
+                  defaultValue="500"
+                  className="form-select"
+                  id="budget">
+                  <option value="500">500 $</option>
                   <option value="600">600 $</option>
                   <option value="700">700 $</option>
                   <option value="800">800 $</option>

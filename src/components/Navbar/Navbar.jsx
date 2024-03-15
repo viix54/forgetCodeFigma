@@ -2,19 +2,20 @@ import React from 'react';
 import './navbar.scss';
 
 import { FaVolleyballBall } from 'react-icons/fa';
+import { IoMdCloseCircle } from 'react-icons/io';
 
 export const Navbar = () => {
   const navbarLinks = ['Home', 'Features', 'Pricing', 'Blog', 'Ball', 'Be'];
   return (
     <nav className="website_links">
-      <ul>
+      <ul className="website_links_list">
         {navbarLinks.map((link, index) => {
           return link === 'Ball' ? (
-            <li key={index + link}>
+            <li className="website_links_list_link" key={index + link}>
               <FaVolleyballBall />
             </li>
           ) : (
-            <li key={index + link}>
+            <li className="website_links_list_link" key={index + link}>
               <a href="#features">{link}</a>
             </li>
           );
