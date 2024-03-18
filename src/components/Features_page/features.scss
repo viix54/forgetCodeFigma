@@ -104,3 +104,77 @@ $text_font: 'DM Sans', sans-serif;
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .features_page{
+        height: 100vh;
+        // padding: 0 0.5em;
+        .features_page_article{
+
+            .features_page_section{
+                display: grid;
+                grid: repeat(2,auto-fill)/100vw;
+                // row-gap: 1000px;
+                // grid-template-columns: 100vw;
+                // grid-template-rows: 1fr 1fr;
+                // grid-template-rows: repeat(3,1fr) ;
+                width: 100vw;
+                &>:nth-child(n){
+                    // border: 2px solid black;
+                }
+                .main_text{
+                    width: 100vw;
+                    height: fit-content;
+                    display: grid;
+                    grid: repeat(2,auto-fill)/100vw;
+                    row-gap: 1rem;
+                    // border: 1px solid black;
+                    .main_text_header{
+                        // border: 1px solid black;
+                        padding: 0 0.5em;
+                        text-align: center;
+                        width: 100vw;  
+                        #features{
+                            // text-align: center;
+                        }  
+                    }
+                    .main_text_features{
+                        padding: 0 0.5em;
+                        width: 100vw; 
+                        height: fit-content;
+                        column-gap: 3.5rem;  
+                        // border: 3px solid black;
+                        display: grid;
+                        row-gap: 1rem;
+                        // grid: repeat(2,1fr)/100%;
+                        justify-content: center;
+                        .main_text_features_first{
+                            // grid-column: span 2;
+                            height: fit-content;
+                            // border: 1px solid white;
+                            // width: fit-content;
+                            // align-self: center ;
+                        }
+                        .main_text_features_second{
+                            // grid-row: span 3;
+                            height: fit-content;
+                            // border: 1px solid black;
+                        }
+                        .main_text_features_first,.main_text_features_second{
+                            display: flex;
+                            flex-direction: column;
+                            // justify-content: flex-end;
+                            align-items: center;
+                            text-align: center;
+                        }
+                    }
+                }
+                .features_bar{
+                    justify-self: center;
+                    display: flex;
+                    column-gap: 20px;
+                }
+            }   
+        }
+    }
+}

@@ -8,11 +8,9 @@ import { HiOutlineSquare2Stack } from 'react-icons/hi2';
 export const Features = () => {
   return (
     <div className="features_page">
-      <article>
-        <section>
-          <div className="features_macbook">
-            <img src={content_backgr} />
-          </div>
+      <article className="features_page_article">
+        <section className="features_page_section">
+          <div className="features_macbook">{/* <img src={content_backgr} /> */}</div>
           <div className="main_text">
             <div className="main_text_header">
               <header>
@@ -24,12 +22,12 @@ export const Features = () => {
               </p>
             </div>
             <div className="main_text_features">
-              <section>
+              <section className="main_text_features_first">
                 <HiOutlineSquare2Stack className="feature_square_comp" />
                 <header>30 New feature pages</header>
                 <p>Startup Framework contains components and complex blocks which can easily. </p>
               </section>
-              <section>
+              <section className="main_text_features_second">
                 <IoDiamondOutline className="feature_diamond_comp" height={'37px'} />
                 <header>Useful Symbol Components</header>
                 <p>Samples will show you the feeling on how to play around using the components.</p>
