@@ -10,7 +10,9 @@ export const Features = () => {
     <div className="features_page">
       <article className="features_page_article">
         <section className="features_page_section">
-          <div className="features_macbook">{/* <img src={content_backgr} /> */}</div>
+          <div className="features_macbook">
+            <img />
+          </div>
           <div className="main_text">
             <div className="main_text_header">
               <header>
