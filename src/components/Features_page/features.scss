@@ -106,13 +106,78 @@ $text_font: 'DM Sans', sans-serif;
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1279px){
+@media screen and (min-width:1920px){
     .features_page{
+        // height: 50vh;
+        // border: 1px solid red;
+        .features_page_article{
+            
+            .features_page_section{
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                // align-items: center;
+                justify-content: space-between;
+                // grid: repeat(1,fit-content)/repeat(3,1fr);
+                // border: 1px solid white;
+                &>:nth-child(n){
+                    // border: 1px solid black;
+                }
+                .features_macbook{
+                    // border: 1px solid     black;
+                    &>img{
+                        height: 40em;
+                        width: 40em;
+                    }
+                }
+                .main_text{
+                    justify-self: center;
+                    width: 75%;
+                    gap:10%;
+                    // width: ;
+                    .main_text_header{
+                        &>header{
+                            &>h1{
+                                font-size: 4rem;
+                            }
+                            // color: red;
+                        }
+                        &>p{
+                            font-size: 2rem;
+                        }
+                    }
+                    .main_text_features{
+                        .main_text_features_first > header, .main_text_features_second > header{
+                            font-size: 1.5rem;
+                        }
+                        p{
+                            width: 80%;
+                            font-size: 1.25rem;
+                        }
+                        .feature_square_comp, .feature_diamond_comp{
+                            height: 2.5rem;
+                            width: 2.5rem;
+                        }
+                    }
+                }
+                .features_bar{
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1279px) and (max-width:1920px){
+    .features_page{
+        height:85vh;
         .features_page_article{
             .features_page_section{
                 // border: 1px solid white;
                 .features_macbook{
-
+                    &>img{
+                        height: 23em;
+                        width: 23em;
+                    }
                 }
                 .main_text{
                     .main_text_features{
