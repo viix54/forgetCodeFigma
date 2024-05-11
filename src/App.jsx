@@ -25,7 +25,7 @@ function App() {
         <Landing />
         <Content />
         <Features />
-        {/* <FormComp /> */}
+        <FormComp />
         {/* <Testimonial /> */}
         {/* <CallToAction /> */}
         {/* <Showcase /> */}

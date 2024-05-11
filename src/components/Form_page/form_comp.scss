@@ -131,3 +131,63 @@ $text_font: 'DM Sans', sans-serif;
 
     }
 }
+
+@media screen and (min-width:320px){
+    .form_article{
+        display: flex;
+        height: 100%;
+        // justify-content: space-between;
+        // flex-direction: column;
+        // align-items: center;
+        // border: 5px solid yellow;
+        
+        &>article{
+            flex-direction: column;
+            padding: 0 0.75em;
+            width: 100vw;
+            height: 100vh;
+            // border: 5px solid black;
+
+            .form_article_text_section{
+                // border: 5px solid black;
+
+                text-align: center;
+                min-height: 0px;
+                &>header{
+                    font-size: 1.75rem;
+                }
+                &>p{
+                    display: none;
+                }
+            }
+            .form_article_auth_section{
+                // border: 5px solid black;
+                // width: 50vw;
+                &>div{
+                    width: 80vw;
+                    height: fit-content;
+                    // height: 70vh;
+                    &>:nth-child(n){
+                        // width: 50vw;    
+                    }
+                    .auth_type{
+                        .auth_type_login, .auth_type_sign_up{
+                            min-height: 2rem;
+                        }
+                    }
+                    .auth_form{
+                        &>form{
+                            align-items: center;
+                            &>:nth-child(n){
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
