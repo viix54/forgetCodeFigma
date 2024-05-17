@@ -9,6 +9,7 @@ $text_font: 'DM Sans', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #2F1893;
+    letter-spacing: 0.08rem;
     height: 750px;
     // border: 1px solid white;
     &>article{
@@ -147,6 +148,8 @@ $text_font: 'DM Sans', sans-serif;
             width: 100vw;
             height: 100vh;
             // border: 5px solid black;
+            row-gap: 4rem;
+            justify-content: center;
 
             .form_article_text_section{
                 // border: 5px solid black;
@@ -190,4 +193,49 @@ $text_font: 'DM Sans', sans-serif;
     }
 }
 
+@media screen and (min-width:470px){
+    .form_article{
+        &>article{
+            .form_article_text_section{
+                // border: 3px solid black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &>header{
+                    font-size: 2rem !important;
+                }
+                &>p{
+                    // display: block !important;
+                    font-size: 1.25rem;
+                    width: 85%;
+                    margin-top: 1rem;
+                }
+            }
+            .form_article_auth_section{
+                &>div{
+                    width: fit-content !important;
+                }   
+            }
+        }
+    }
+}
 
+@media screen and (min-width: 600px){
+    .form_article{
+        &>article{
+            .form_article_text_section{
+                // flex: 1;
+                &>p{
+                    border: 1px solid black;
+                    display: block !important;
+                    font-size: 1.25rem;
+                    width: 85%;
+                    margin-top: 1rem;
+                }
+            }
+            .form_article_auth_section{
+                // flex: 3;
+            }
+        }
+    }
+}
